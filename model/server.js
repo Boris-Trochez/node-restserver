@@ -28,7 +28,6 @@ class Server {
     }
 
     routes() {
-        console.log("ddd")
         this.app.use( this.userPath, require('../routes/user') );
     }
 
