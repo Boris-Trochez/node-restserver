@@ -1,11 +1,12 @@
 const { response } = require('express');
 
 const getUser = (req, res = response) => {
-    const { name = 'No mane', age = 1 } = req.query; //Default values can be defined.
+    const { name = 'No mane', age = 1, page = 1 } = req.query; //Default values can be defined.
     res.json({
         msg: 'getUser - controller',
         name,
-        age
+        age,
+        page
     });
 }
 
